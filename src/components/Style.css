@@ -1,0 +1,157 @@
+/* General look of container, background, and neuphorphism shadows*/
+body{
+    margin:0;
+    background: #e2e2e2;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.container{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.neu {
+    box-shadow: -5px -5px 15px 0px #ffffff9e, 5px 5px 15px 0px #a3b1c6a8;
+    background: #e2e2e2;
+    border-radius: 2em;
+    border: 0;
+}
+
+.player {
+    width: 25%;
+    height: 75%;
+    margin-bottom: 1vh;
+    background: #e2e2e2;
+    border-radius: 2em;
+    box-sizing: border-box;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Playlist and buttons styling*/
+.playlist {
+    margin-top: -1vh;
+    margin-bottom: .5vh;
+    display: flex;
+    justify-content: center;
+    font-size: 3vh;
+    flex-wrap: nowrap;
+}
+.playlist-name{
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    margin:0;
+    display: flex;
+    justify-content: center;
+    font-size: 3vh;
+}
+.pbtn-left {
+    background-color: rgba(128, 128, 128, 0);
+    border: none;
+    position: fixed;
+    left: 38vw;
+    justify-content: space-between;
+    shape-outside: ellipse();
+    clip-path: ellipse();
+}
+.pbtn-right {
+    background-color: rgba(128, 128, 128, 0);
+    border: none;
+    position: fixed;
+    right: 38vw;
+    justify-content: space-between;
+    shape-outside: ellipse();
+    clip-path: ellipse();
+}
+.pbtn>img {
+    padding: 0;
+    margin: 0;
+    height: 3vh;
+}
+.pbtn:active {
+    cursor: pointer;
+}
+
+
+/* Image styling*/
+.image{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+    .image > img{
+        margin-top: 1vh;
+        border-radius: 15px;
+        display:flex;
+        height: 35vh;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+/* Song and artist styling*/
+.title{
+    display: flex;
+    margin-top: 2vh;
+    font-size: 2vw;
+    color: #3a3535;
+    justify-content: center;
+    flex-wrap: wrap;
+    word-break: break-all;
+}
+
+.artist-name{
+    display: flex;
+    margin-top: .11vh;
+    font-size: 1.5vw;
+    color: #3f3a3a;
+    justify-content: center;
+    margin-bottom: .1vh;
+}
+
+
+/* Media control styling*/
+.media-control{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1em 0;
+}
+    .btn{
+        padding: 5px;
+        border-radius: 30px;
+        color: #ffffff9e;
+        outline: none;
+        cursor: pointer;
+    }
+        .btn:active {
+            cursor: pointer;
+            box-shadow: 5px 5px 15px 0px #ffffff9e, -5px -5px 15px 0px #a3b1c6a8;
+        }  
+            .btn > img{
+                display: flex;
+                height: 5vh;
+                width: auto;
+            }
+
+.seek-wrap{
+    margin-top: 2vw;
+    min-width: 100%;
+    background-color: #211f1f94;
+    height: 1vh;
+    border-radius: 5vh;
+    cursor: pointer;
+}
+    .seek-bar{
+        width:0;
+        height: 1vh;
+        background-color: #ffffff;
+        border-radius: 5vh;
+    }
